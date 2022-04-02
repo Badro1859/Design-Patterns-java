@@ -20,18 +20,12 @@ public class AfficheurHeureSurConsole implements TimerChangeListener {
 
     public AfficheurHeureSurConsole() {
         timer =  Lookup.getInstance().getService(TimerService.class);
-        timer.addTimeChangeListener(this);
-    }
-
-
-    @Override
-    public void propertyChange(String propertyName, Object oldValue, Object newValue) {
-        if (propertyName == TimerChangeListener.SECONDE_PROP)
-            System.out.println(timer.getHeures() + ":" + timer.getMinutes() + ":" + timer.getSecondes());
+        timer.addTimeChangeListener(this, TimerChangeListener.SECONDE_PROP);
     }
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
+        System.out.println(timer.getHeures() + ":" + timer.getMinutes() + ":" + timer.getSecondes());
 
     }
 }

@@ -5,23 +5,24 @@
  */
 package org.emp.gl.timer.service;
 
-import lombok.experimental.Delegate;
 
-import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 
 /**
  *
- * @author tina
+ * @author Bader Eddine
  */
+
 public interface TimerChangeListener extends PropertyChangeListener{
-    
+
+    // def of all property of Listener
+
     String DIXEME_DE_SECONDE_PROP = "dixième" ;
     String SECONDE_PROP = "seconde" ;
     String MINUTE_PROP = "minute" ;
     String HEURE_PROP = "heure" ;
 
 
-    void propertyChange (String propertyName, Object oldValue, Object newValue) ;
+    // void propertyChange (String propertyName, Object oldValue, Object newValue) ;
                   
 }

@@ -1,9 +1,8 @@
 package org.emp.gl.core.launcher;
 
-import lombok.experimental.Delegate;
+
 import org.emp.gl.core.lookup.Lookup;
 import org.emp.gl.time.service.impl.DummyTimeServiceImpl;
-import org.emp.gl.timer.service.TimerChangeListener;
 import org.emp.gl.timer.service.TimerService;
 
 import java.util.Random;
@@ -19,15 +18,25 @@ public class App {
     }
 
     public static void main(String[] args) {
-        //AfficheurHeureSurConsole displayer = new AfficheurHeureSurConsole();
+        //testAfficheurHeureSurConsole();
 
+        // testCompteARebour();
+
+
+
+    }
+
+    public static void testAfficheurHeureSurConsole() {
+        AfficheurHeureSurConsole displayer = new AfficheurHeureSurConsole();
+    }
+
+    public static void testCompteARebour() {
         Random rnd = new Random();
         for (int k=0; k<10; k++) {
             CompteARebour timer = new CompteARebour(rnd.nextInt(10) +5);
         }
-
-
     }
+
 
     private static void testDuTimeService() {
 

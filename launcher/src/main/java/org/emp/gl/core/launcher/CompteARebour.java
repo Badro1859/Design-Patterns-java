@@ -12,7 +12,7 @@ import org.emp.gl.timer.service.TimerChangeListener;
 import org.emp.gl.timer.service.TimerService;
 
 /**
- * @author tina
+ * @author Bader Eddine
  */
 public class CompteARebour implements TimerChangeListener{
 
@@ -25,18 +25,6 @@ public class CompteARebour implements TimerChangeListener{
         compteur = nbrSeconde;
     }
 
-
-    @Override
-    public void propertyChange(String propertyName, Object oldValue, Object newValue) {
-        if (propertyName == TimerChangeListener.SECONDE_PROP) {
-            if (--compteur != 0)
-                System.out.println("Compteur : " + compteur);
-            else {
-                System.out.println("Fin");
-                timer.removeTimeChangeListener(this, TimerChangeListener.SECONDE_PROP);
-            }
-        }
-    }
 
     @Override
     public void propertyChange(PropertyChangeEvent evt) {
