@@ -7,7 +7,7 @@ package org.emp.gl.timer.service;
 
 /**
  *
- * @author tina
+ * @author BADER EDDINE
  */
 public interface TimeChangeProvider {
 

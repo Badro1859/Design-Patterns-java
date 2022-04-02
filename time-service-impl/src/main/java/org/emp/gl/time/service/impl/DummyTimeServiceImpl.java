@@ -15,7 +15,7 @@ import org.emp.gl.timer.service.TimerService;
 import java.beans.PropertyChangeSupport;
 
 /**
- * @author Bader Eddine
+ * @author BADER EDDINE
  */
 
 public class DummyTimeServiceImpl

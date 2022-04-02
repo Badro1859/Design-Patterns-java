@@ -5,6 +5,7 @@ import org.emp.gl.core.lookup.Lookup;
 import org.emp.gl.time.service.impl.DummyTimeServiceImpl;
 import org.emp.gl.timer.service.TimerService;
 
+import javax.swing.*;
 import java.util.Random;
 
 /**
@@ -18,13 +19,20 @@ public class App {
     }
 
     public static void main(String[] args) {
-        //testAfficheurHeureSurConsole();
+        // testAfficheurHeureSurConsole();
 
         // testCompteARebour();
 
-
+        // testDisplayHourInGUI();
 
     }
+
+    private static void testDisplayHourInGUI() {
+
+        //DisplayHourInGUI frame = new DisplayHourInGUI();
+        new DisplayTimeGUI();
+    }
+
 
     public static void testAfficheurHeureSurConsole() {
         AfficheurHeureSurConsole displayer = new AfficheurHeureSurConsole();

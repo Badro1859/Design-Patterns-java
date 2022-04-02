@@ -10,7 +10,7 @@ import java.beans.PropertyChangeListener;
 
 /**
  *
- * @author Bader Eddine
+ * @author BADER EDDINE
  */
 
 public interface TimerChangeListener extends PropertyChangeListener{

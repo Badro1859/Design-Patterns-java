@@ -12,7 +12,7 @@ import org.emp.gl.timer.service.TimerChangeListener;
 import org.emp.gl.timer.service.TimerService;
 
 /**
- * @author Bader Eddine
+ * @author BADER EDDINE
  */
 public class CompteARebour implements TimerChangeListener{
 

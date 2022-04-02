@@ -12,7 +12,7 @@ import org.emp.gl.timer.service.TimerService;
 
 /**
  *
- * @author MADANI BADER EDDINE RSI-B-
+ * @author BADER EDDINE
  */
 public class AfficheurHeureSurConsole implements TimerChangeListener {
 
